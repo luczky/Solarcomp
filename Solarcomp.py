@@ -60,7 +60,7 @@ while True:
 
     zapytanie(4)
     odpowiedz(poz4,1)
-#
+
     def pytmoc():
         moc = []
         moc=ser.read(11)
