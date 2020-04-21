@@ -79,7 +79,7 @@ while True:
     mocw = float(mocpyt)*100
 
     time.sleep(1)
-
+#
     zapytanie(6)
     pytmoc()
 
