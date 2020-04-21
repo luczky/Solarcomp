@@ -84,7 +84,7 @@ while True:
     pytmoc()
 
     mocd = (mocpyt)
-#
+
     ser.close()
     requests.post('http://192.168.1.38:8084/json.htm?type=command&param=udevice&idx=' +(str(poz5)) +'&svalue=' +(str(mocw)) +';' +(str(mocd)))
     #print mocw
