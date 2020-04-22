@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-# scrypt do odczytu po rs485 ze sterownika Solarcomp 951
+# scrypt do odczytu po rs485 ze sterownika Solarcomp 951 v2
 import time
 import serial
 import requests
