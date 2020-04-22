@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-# scrypt do odczytu po rs485 ze sterownika Solarcomp 951 v2
+# scrypt do odczytu po rs485 ze sterownika Solarcomp 951 v7
 import time
 import serial
 import requests
@@ -24,8 +24,7 @@ while True:
     znakodczyt = bytearray(b'\x01\x01\x02\x03\x0a\x0b\x0c')
     data = bytearray(b'\x81\x54\x01\x5A\x78\x78\x01\x78\x78\x78\x23')
     def zapytanie(wartosc):
-        nrodczyt = wartosc
-        data[6] = znakodczyt[nrodczyt]
+        data[6] = znakodczyt[wartosc]
         #print data[6]
         ser.write(data)
     def odpowiedz(idx, dzielnik):
